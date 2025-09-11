@@ -1,0 +1,5 @@
+C:/Users/prash/OneDrive/Desktop/VirtualClassroom/.utmp/RelWithDebInfo/m6c245k3/arm64-v8a/CMakeFiles/edit_cache.dir
+C:/Users/prash/OneDrive/Desktop/VirtualClassroom/.utmp/RelWithDebInfo/m6c245k3/arm64-v8a/CMakeFiles/rebuild_cache.dir
+C:/Users/prash/OneDrive/Desktop/VirtualClassroom/.utmp/RelWithDebInfo/m6c245k3/arm64-v8a/GameActivity/CMakeFiles/game.dir
+C:/Users/prash/OneDrive/Desktop/VirtualClassroom/.utmp/RelWithDebInfo/m6c245k3/arm64-v8a/GameActivity/CMakeFiles/edit_cache.dir
+C:/Users/prash/OneDrive/Desktop/VirtualClassroom/.utmp/RelWithDebInfo/m6c245k3/arm64-v8a/GameActivity/CMakeFiles/rebuild_cache.dir
