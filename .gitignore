@@ -1,4 +1,4 @@
-# === Unity ===
+# === Unity Generated Folders ===
 [Ll]ibrary/
 [Tt]emp/
 [Oo]bj/
@@ -8,23 +8,28 @@
 [Mm]emoryCaptures/
 [Gg]eneratedAssets/
 
-# User-specific settings
-UserSettings/
-.vs/
-*.csproj
-*.unityproj
-*.sln
-*.suo
+# === Unity Temporary / Cache Files ===
 *.tmp
-*.user
-*.userprefs
+*.utmp
 *.pidb
 *.booproj
 *.svd
 
-# OS-specific
+# === User-specific Settings (Not Required for Project) ===
+UserSettings/
+.vs/
+*.user
+*.userprefs
+*.suo
+
+# === IDE Project Files ===
+*.csproj
+*.unityproj
+*.sln
+
+# === OS-specific Files ===
 .DS_Store
 Thumbs.db
 
-# Crash Reports
+# === Crash Reports ===
 sysinfo.txt
