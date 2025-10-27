@@ -15,7 +15,7 @@ public class StudentManager : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.S) && !isActionRunning)
+        if (Input.GetKeyDown(KeyCode.E) && !isActionRunning)
         {
             StartCoroutine(RandomStudentStand());
         }
