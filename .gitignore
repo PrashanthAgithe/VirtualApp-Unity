@@ -33,3 +33,7 @@ Thumbs.db
 
 # === Crash Reports ===
 sysinfo.txt
+
+
+Assets/Scripts/GeminiAPI.cs
+Assets/Scripts/GeminiAPI.cs.meta
