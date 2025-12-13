@@ -4518,11 +4518,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 60, y: 0, z: 0}
---- !u!20 &1409508094 stripped
-Camera:
-  m_CorrespondingSourceObject: {fileID: 5126527961139664767, guid: 035bf1ba97d19214580cfe6f5a29fdc3, type: 3}
-  m_PrefabInstance: {fileID: 913170274}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1418756126
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5909,7 +5904,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 953964448}
         m_TargetAssemblyTypeName: ClassroomController, Assembly-CSharp
-        m_MethodName: GoToMainMenu
+        m_MethodName: GoToPRPSA
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7246,7 +7241,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af0e0e8d8bb77914488ba40ad724707a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CanvasAutoFix
-  targetCamera: {fileID: 1409508094}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

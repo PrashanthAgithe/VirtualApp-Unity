@@ -7,4 +7,8 @@ public class ClassroomController : MonoBehaviour
     {
         SceneManager.LoadScene("MainMenu");
     }
+    public void GoToPRPSA()
+    {
+        SceneManager.LoadScene("PRPSAScene");
+    }
 }
