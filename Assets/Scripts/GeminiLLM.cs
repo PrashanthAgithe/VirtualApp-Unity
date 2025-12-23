@@ -18,16 +18,15 @@ public class GeminiLLM : MonoBehaviour
         {
             Instance = this;
             DontDestroyOnLoad(gameObject);
-            // StartCoroutine(CheckAvailableModels());
-            // GenerateAndPlayAudioFromText(this, "Welcome to the virtual classroom!");
-            StartCoroutine(GenerateAudioOnly("Welcome to the virtual classroom!", (clip) =>
-            {
-                AudioSource src = GetComponent<AudioSource>();
-                if (!src) src = gameObject.AddComponent<AudioSource>();
-                MessageManager.Instance.ShowMessage("Welcome to the virtual classroom!");
-                src.clip = clip;
-                src.Play();
-            }));
+            
+            // StartCoroutine(GenerateAudioOnly("Welcome to the virtual classroom!", (clip) =>
+            // {
+            //     AudioSource src = GetComponent<AudioSource>();
+            //     if (!src) src = gameObject.AddComponent<AudioSource>();
+            //     MessageManager.Instance.ShowMessage("Welcome to the virtual classroom!");
+            //     src.clip = clip;
+            //     src.Play();
+            // }));
         }
         else
         {
@@ -79,9 +78,9 @@ public class GeminiLLM : MonoBehaviour
         };
 
         string jsonData = requestJson.ToString();
-        Debug.Log("Sending audio to Gemini..." + GeminiConfig.API_KEY);
+        // Debug.Log("Sending audio to Gemini..." + Config.Gemini_API_KEY);
 
-        string url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=" + GeminiConfig.API_KEY;
+        string url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=" + Config.Gemini_API_KEY;
         UnityWebRequest request = new UnityWebRequest(url, "POST");
         byte[] bodyRaw = System.Text.Encoding.UTF8.GetBytes(jsonData);
 
@@ -224,7 +223,7 @@ public class GeminiLLM : MonoBehaviour
         string jsonData = requestJson.ToString();
         
         // ✅ CORRECTED: Use the actual TTS model
-        string url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-tts:generateContent?key=" + GeminiConfig.API_KEY;
+        string url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-tts:generateContent?key=" + Config.Gemini_API_KEY;
 
         UnityWebRequest request = new UnityWebRequest(url, "POST");
         byte[] bodyRaw = System.Text.Encoding.UTF8.GetBytes(jsonData);
@@ -340,7 +339,7 @@ public class GeminiLLM : MonoBehaviour
 
     private IEnumerator CheckAvailableModels()
     {
-        string url = "https://generativelanguage.googleapis.com/v1beta/models?key=" + GeminiConfig.API_KEY;
+        string url = "https://generativelanguage.googleapis.com/v1beta/models?key=" + Config.Gemini_API_KEY;
         
         UnityWebRequest request = UnityWebRequest.Get(url);
         yield return request.SendWebRequest();

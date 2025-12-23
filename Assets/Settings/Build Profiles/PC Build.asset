@@ -24,7 +24,7 @@ MonoBehaviour:
     m_path: Assets/Scenes/MainMenu.unity
   - m_enabled: 1
     m_path: Assets/Scenes/SampleScene.unity
-  - m_enabled: 1
+  - m_enabled: 0
     m_path: Assets/Scenes/PRPSAScene.unity
   m_ScriptingDefines: []
   m_PlayerSettingsYaml:
